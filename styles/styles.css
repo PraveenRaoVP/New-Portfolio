@@ -99,6 +99,30 @@ section {
 
 .active {
   display: block;
+  -webkit-animation: transAnim 0.3s ease-out;
+          animation: transAnim 0.3s ease-out;
+}
+
+@-webkit-keyframes transAnim {
+  0% {
+    -webkit-transform: translateY(-100%) scaleY(0);
+            transform: translateY(-100%) scaleY(0);
+  }
+  100% {
+    -webkit-transform: translateY(0) scaleY(1);
+            transform: translateY(0) scaleY(1);
+  }
+}
+
+@keyframes transAnim {
+  0% {
+    -webkit-transform: translateY(-100%) scaleY(0);
+            transform: translateY(-100%) scaleY(0);
+  }
+  100% {
+    -webkit-transform: translateY(0) scaleY(1);
+            transform: translateY(0) scaleY(1);
+  }
 }
 
 .controls {
@@ -167,5 +191,22 @@ section {
 
 .controls .control:hover i {
   color: var(--color-white);
+}
+
+.contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 10px;
+}
+
+.content-hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  display: none;
+}
+
+.contents:hover .content-hover {
+  display: block;
 }
 /*# sourceMappingURL=styles.css.map */

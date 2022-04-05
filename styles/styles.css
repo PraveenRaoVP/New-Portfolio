@@ -54,7 +54,7 @@ a {
 }
 
 header {
-  min-height: 150vh;
+  height: 100vh;
   color: var(--color-white);
   font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
@@ -1091,6 +1091,7 @@ hr {
 @media screen and (max-width: 800px) {
   header {
     padding: 0;
+    min-height: 150vh;
   }
   header .right-header {
     padding: 2rem !important;

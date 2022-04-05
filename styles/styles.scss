@@ -52,9 +52,10 @@ a{
 }
 
 header{
-    height: 100vh;
+    min-height: 150vh;
     color: var(--color-white);
-    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
 }
 
 section{
@@ -247,6 +248,7 @@ section{
     font-weight: 600;
     position: relative;
     border: 1px solid var(--color-secondary);
+    text-align: center;
     display: flex;
     align-self: flex-start;
     display: flex;
@@ -292,6 +294,11 @@ section{
         font-weight: 700;
         span{
             color: var(--color-secondary);   
+            transition: var(--transition-common);
+            &:hover{
+                font-size: 4.2rem;
+                font-weight: 900;
+            }
         }
         .bg-txt{
             position: absolute;
@@ -404,7 +411,7 @@ hr{
     align-items: center;
     justify-content: center;
     display: flex;
-    margin: 0 500px;
+    margin: 0 8rem;
     opacity: 0.3;
 }
 
@@ -497,10 +504,14 @@ hr{
         }
         .tl-duration{
             display: inline-block;
+            background-color: var(--color-gray5);
+            border-radius: 10px;
+            padding: 0 1rem;
         }
         h5{
             font-size: 1.3rem;
             font-weight: 600;
+            padding-top: 1rem;
             span{
                 color: var(--color-gray1);
                 font-weight: 700;

@@ -16,11 +16,25 @@
   --color-gray2: #b2becd;
   --color-gray3: #6c7983;
   --color-gray4: #454e56;
-  --color-gray5: #2a2e35;
+  --color-gray5: #42464eb5;
   --color-gray6: #12181b;
   --br-sm-2: 14px;
   --transition-common: all .4s ease-in-out;
   --box-shadow-1: 0 3px 15px rgba(0,0,0,0.3);
+}
+
+.light-mode {
+  --color-primary: #FFFFFF;
+  --color-secondary: #F56692;
+  --color-white: #454e56;
+  --color-black: #000;
+  --color-gray0: #f8f8f8;
+  --color-gray1: #6c7983;
+  --color-gray2: #6c7983;
+  --color-gray3: #6c7983;
+  --color-gray4: #454e56;
+  --color-gray5: #f8f8f852;
+  --color-gray6: #12181b;
 }
 
 body {
@@ -859,5 +873,233 @@ hr {
 .blogs .blog .blog-txt p {
   color: var(--color-gray2);
   line-height: 2rem;
+}
+
+.contact-content-con {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 3.5rem;
+  padding: 1.5rem 10rem;
+}
+
+.contact-content-con .left-contact {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.contact-content-con .left-contact h4 {
+  margin-top: 1rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.contact-content-con .left-contact p {
+  margin: 1rem 0;
+  line-height: 2rem;
+}
+
+.contact-content-con .left-contact .contact-info .contact-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact-content-con .left-contact .contact-info .contact-item p {
+  margin: 0.3rem 0 !important;
+  padding: 0 !important;
+}
+
+.contact-content-con .left-contact .contact-info .contact-item .icon i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.3rem;
+}
+
+.contact-content-con .right-contact {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  margin-left: 3rem;
+  margin-top: 4.5rem;
+}
+
+.contact-content-con .right-contact .input-ctrl {
+  margin: 1.5rem 0;
+}
+
+.contact-content-con .right-contact .input-ctrl input, .contact-content-con .right-contact .input-ctrl textarea {
+  border-radius: 30px;
+  font-weight: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  padding: 0.8rem 1.1rem;
+  outline: none;
+  border: none;
+  background-color: var(--color-gray5);
+  width: 100%;
+  color: var(--color-white);
+  resize: none;
+}
+
+.contact-content-con .right-contact .ic2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact-content-con .right-contact .ic2 :last-child {
+  margin-left: 1.5rem;
+}
+
+.contact-content-con .right-contact .btn-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-content-con .right-contact .btn-div .submit-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.5rem;
+  margin: 0 1rem;
+}
+
+.contact-icons .contact-icon {
+  border-radius: 50%;
+  color: white;
+  margin: 0 .6rem;
+  background-color: var(--color-gray5);
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: var(--transition-common);
+  transition: var(--transition-common);
+}
+
+.contact-icons .contact-icon i {
+  font-size: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact-icons .contact-icon:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  background-color: var(--color-secondary);
+}
+
+.theme-btn {
+  top: 5%;
+  right: 3%;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: var(--color-gray4);
+  cursor: pointer;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.4);
+  -webkit-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out;
+}
+
+.theme-btn:active {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+}
+
+.theme-btn i {
+  font-size: 1.4rem;
+  color: var(--color-gray2);
+  pointer-events: none;
+}
+
+@media screen and (max-width: 800px) {
+  header {
+    padding: 0;
+  }
+  header .right-header {
+    padding: 2rem !important;
+  }
+  .controls {
+    top: auto;
+    bottom: 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 100%;
+    background-color: var(--color-gray5);
+  }
+  .controls .control {
+    margin: 1rem 0.3rem;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

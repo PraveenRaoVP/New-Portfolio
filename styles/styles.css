@@ -1153,7 +1153,7 @@ hr {
     padding: 3rem !important;
   }
   .about-container left.about {
-    padding: 0;
+    padding: 0 !important;
   }
   .about-container .right-about {
     padding-top: 2.5rem;

@@ -41,5 +41,20 @@ function pageTransition() {
     });
 }
 
+function submitform(){
+    alert(`Query Submitted !`);
+    window.onbeforeunload = function(e) {
+    // For IE and Firefox 
+    if (e) {
+        e.returnValue = message;
+    }
+    // For Safari
+    return message;
+    };
+}
+
+
+
+
  pageTransition();
 

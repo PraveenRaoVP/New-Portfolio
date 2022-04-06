@@ -1152,6 +1152,9 @@ hr {
         grid-template-columns: 1fr;
     padding: 3rem !important;
   }
+  .about-container left.about {
+    padding: 0;
+  }
   .about-container .right-about {
     padding-top: 2.5rem;
     -ms-grid-columns: 1fr;

@@ -55,6 +55,9 @@
     .about-container{
         grid-template-columns: 1fr;
         padding: 3rem !important;
+        left.about{
+            padding: 0;
+        }
         .right-about{
             padding-top: 2.5rem;
             grid-template-columns: 1fr;

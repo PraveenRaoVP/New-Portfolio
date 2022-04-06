@@ -87,6 +87,10 @@
 
     .contact-content-con{
         flex-direction: column;
+        padding: 1rem;
+        text-align: left;
+        justify-content: none;
+        align-items: none;
         .input-ctrl{
             width: 100% !important;
         }

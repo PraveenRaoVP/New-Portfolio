@@ -1184,6 +1184,14 @@ hr {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding: 1rem;
+    text-align: left;
+    -webkit-box-pack: none;
+        -ms-flex-pack: none;
+            justify-content: none;
+    -webkit-box-align: none;
+        -ms-flex-align: none;
+            align-items: none;
   }
   .contact-content-con .input-ctrl {
     width: 100% !important;

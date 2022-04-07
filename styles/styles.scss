@@ -808,4 +808,22 @@ hr{
 }
 
 
+.submit-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .submit-text{
+        padding-top: 8rem;
+    }
+    .btn-container-sub{
+        text-align: center;
+        padding: 5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+
 @import './media';

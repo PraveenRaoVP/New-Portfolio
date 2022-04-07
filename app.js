@@ -54,7 +54,5 @@ function submitform(){
 }
 
 
-
-
  pageTransition();
 

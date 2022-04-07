@@ -1000,6 +1000,7 @@ hr {
       -ms-flex-align: center;
           align-items: center;
   color: var(--color-white);
+  cursor: pointer;
 }
 
 .contact-content-con .right-contact .btn-div .submit-btn button {
@@ -1287,6 +1288,7 @@ hr {
   }
   .contact-icon-container {
     padding-bottom: 7rem !important;
+    padding-top: 5rem !important;
   }
 }
 /*# sourceMappingURL=styles.css.map */

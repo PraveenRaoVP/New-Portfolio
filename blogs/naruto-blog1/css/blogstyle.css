@@ -1,0 +1,296 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.italic {
+  font-style: italic;
+}
+
+:root {
+  --header-background: rgba(155, 183, 183, 0.5);
+  --color-home-green: #27ae60;
+  --section-background: rgb(209, 224, 224);
+  --transition-common: all .4s ease-in-out;
+  --body-background: linear-gradient(
+      35deg,
+      #ccffff,
+      #ffcccc
+    );
+}
+
+body {
+  font-size: 1.1rem;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 2px;
+  background: var(--body-background);
+}
+
+.header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100px;
+  background-color: var(--header-background);
+  margin-top: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  border-radius: 10px;
+}
+
+.header-container .back-btn {
+  -webkit-transition: var(--transition-common);
+  transition: var(--transition-common);
+  border: 1px solid var(--color-home-green);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+.header-container .back-btn a {
+  text-decoration: none;
+}
+
+.header-container .back-btn i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  font-size: 3.5rem;
+  color: var(--color-home-green);
+}
+
+.header-container .back-btn:hover {
+  background-color: var(--color-home-green);
+}
+
+.header-container .back-btn:hover i {
+  color: white;
+}
+
+.header-container .title-blog {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-container .dates {
+  font-size: 0.8rem;
+  margin-top: 4rem;
+}
+
+.intro {
+  padding: 4rem;
+  font-size: 1rem;
+}
+
+.topic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: var(--section-background);
+  padding: 3rem;
+  margin: 3rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 10px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.topic .heading {
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.topic p {
+  -webkit-box-flex: 0.6;
+      -ms-flex: 0.6;
+          flex: 0.6;
+  padding-right: 2rem;
+  letter-spacing: 1px;
+}
+
+.topic figure {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 1.5rem;
+  border-radius: 5px;
+  height: 400px;
+  width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.topic figure img {
+  -webkit-transition: var(--transition-common);
+  transition: var(--transition-common);
+  -webkit-box-flex: 0.4;
+      -ms-flex: 0.4;
+          flex: 0.4;
+  max-height: 100%;
+  max-width: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+  z-index: 1;
+}
+
+.topic figure figcaption {
+  font-weight: 300;
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+  -webkit-transition: var(--transition-common);
+  transition: var(--transition-common);
+  z-index: 10;
+}
+
+.topic figure:hover {
+  border: 1px solid #000;
+}
+
+.topic figure:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.topic figure:hover figcaption {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: white;
+  margin-top: -45px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  text-align: center;
+  width: 100%;
+}
+
+.lists {
+  padding: 3rem;
+}
+
+.lists h4 {
+  font-weight: 500;
+  font-size: 1.7rem;
+}
+
+.lists ol {
+  padding-top: 1rem;
+  padding-left: 4rem;
+  line-height: 1.5rem;
+}
+
+.conclusion {
+  padding: 3rem;
+}
+
+.conclusion h5 {
+  font-size: 1.2rem;
+}
+
+.conclusion p {
+  padding-top: 1rem;
+  letter-spacing: 1px;
+}
+
+.about figure {
+  padding-bottom: 2rem;
+}
+
+.about:hover {
+  border: none;
+}
+
+footer {
+  background-color: var(--header-background);
+  height: 175px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+footer h4 {
+  text-align: center;
+  font-weight: 800;
+  font-size: 1.3rem;
+}
+
+.contact-icon-container {
+  padding: 3rem;
+}
+
+.contact-icon-container .contact-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-icon-container .contact-icons .contact-icon a {
+  border: 1px solid #000;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: var(--transition-common);
+  transition: var(--transition-common);
+}
+
+.contact-icon-container .contact-icons .contact-icon a i {
+  color: #000;
+}
+
+.contact-icon-container .contact-icons .contact-icon a:hover {
+  background-color: #000;
+}
+
+.contact-icon-container .contact-icons .contact-icon a:hover i {
+  color: white;
+}
+/*# sourceMappingURL=blogstyle.css.map */

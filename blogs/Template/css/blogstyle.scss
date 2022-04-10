@@ -1,0 +1,216 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --header-background: rgba(155, 183, 183, 0.5);
+    --color-home-green: #27ae60;
+    --section-background: rgb(209, 224, 224);
+    --transition-common: all .4s ease-in-out;
+    --body-background: linear-gradient(
+      35deg,
+      #ccffff,
+      #ffcccc
+    );
+}
+
+body{
+    font-size: 1.1rem;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 2px;
+    background: var(--body-background);
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    background-color: var(--header-background);
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    border-radius: 10px;
+    
+    .back-btn{
+        transition: var(--transition-common);
+        border: 1px solid var(--color-home-green);
+        align-items: center;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        margin-top: 15px;
+        margin-left: 15px;
+        a{
+            text-decoration: none;
+        }
+        i{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            font-size: 3.5rem;
+            color: var(--color-home-green);
+        }
+        &:hover{
+            background-color: var(--color-home-green);
+            i{
+               color: white; 
+            }
+        }
+    }
+
+    .title-blog{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .dates{
+        font-size: 0.8rem;
+        margin-top: 4rem;
+    }
+}
+
+.intro{
+    padding: 4rem;
+    font-size: 1rem;
+}
+
+
+.topic{
+    display: flex;
+    background-color: var(--section-background);
+    padding: 3rem;
+    margin: 3rem;
+    justify-content: space-between;
+    border-radius: 10px;
+    height: fit-content;
+    p{
+        flex: 0.6;
+        padding-right: 2rem;
+        letter-spacing: 1px;
+    }
+
+    figure{
+        border: 1px solid rgba(0,0,0,0.2);
+        padding: 1.5rem;
+        border-radius: 5px;
+        height: 400px;
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        img{
+            transition: var(--transition-common);
+            flex: 0.4;
+            max-height: 100%;
+            max-width: 100%;
+            object-fit: fill;
+            z-index: 1;
+        }
+        figcaption{
+            font-weight: 300;
+            letter-spacing: 1px;
+            font-size: 0.8rem;
+            transition: var(--transition-common);
+            z-index: 10;
+        }
+        &:hover{
+            border: 1px solid #000;
+            img{
+                transform: scale(1.1);
+            }
+            figcaption{
+                font-weight: 600;
+                font-size: 1.1rem;
+                color: white;
+                margin-top: -45px;
+                background-color: rgba(0,0,0,0.6);
+                border-radius: 5px;
+                height: max-content;
+                text-align: center;
+                width: 100%;
+            }
+        }
+    }
+}
+
+.lists{
+    padding: 3rem;
+    h4{
+        font-weight: 500;
+        font-size: 1.7rem;
+    }
+    ol{
+        padding-top: 1rem;
+        padding-left: 4rem;
+        line-height: 1.5rem;
+    }
+}
+
+
+.conclusion{
+    padding: 3rem;
+    h5{
+        font-size: 1.2rem;
+    }
+    p{
+        padding-top: 1rem;
+        letter-spacing: 1px;
+    }
+}
+
+.about{
+    figure{
+        padding-bottom: 2rem;
+    }
+    &:hover{
+        border: none;
+    }
+}
+
+
+footer{
+    background-color: var(--header-background);
+    height:175px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    h4{
+        text-align: center;
+        font-weight: 800;
+        font-size: 1.3rem;
+    }
+}
+
+.contact-icon-container{
+    padding: 3rem;
+    .contact-icons{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        .contact-icon{
+                a{
+                border: 1px solid #000;
+                border-radius: 50%;
+                height: 50px;
+                width: 50px;
+                text-decoration: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: var(--transition-common);
+                i{
+                    color:#000; 
+                }
+                &:hover{
+                    background-color: #000;
+                    i{
+                        color:white;
+                    }
+                }
+            }
+        }
+    }
+}
